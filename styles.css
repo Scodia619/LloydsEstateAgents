@@ -1,0 +1,119 @@
+body{
+    background-color: white;
+    margin: 0;
+    font-family: "Titillium Web", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-logo{
+    width: 200px;
+    height: 65px;
+}
+
+nav{
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    background-color: black;
+    font-family: "PT Sans Narrow", sans-serif;
+    padding: 1rem 0 5px 1rem;
+    box-sizing: border-box; /* Prevent padding from causing overflow */
+    width: 100%; /* Let it take up full width */
+}
+
+.right-nav{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    align-items: end;
+}
+
+.right-nav > a:hover{
+    color: yellow;
+}
+
+.right-nav > a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    width: 40%;
+    margin-top: 3rem;
+    font-size: 1.1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10rem;
+}
+
+main > ul{
+    width: 70%
+}
+
+p{
+    width: 75%
+}
+
+/* form */
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+
+  label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  input::placeholder, textarea::placeholder {
+    font-style: italic;
+    color: #888;
+  }

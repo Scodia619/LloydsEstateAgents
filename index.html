@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lloyds Estate Agents</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Quicksand:wght@300..700&display=swap&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <div class="left-nav">
+            <img src="http://www.lloydsestateagents.co.uk/lloyds-complete-logo.png" class="main-logo">
+        </div>
+        <div class="right-nav">
+            <h1>Home page</h1>
+            <a href="https://www.rightmove.co.uk/property-for-sale/find/Lloyds-Estate-Agents/Warrington.html?locationIdentifier=BRANCH^76549&includeSSTC=true&_includeSSTC=on" target="_blank"><h1>Find a property</h1></a>
+            <a href="https://www.rightmove.co.uk/estate-agents/contactBranch.html?branchId=76549" target="_blank"><h1>Sell a property</h1></a>
+            <h1>Contact us</h1>
+        </div>
+    </nav>
+
+    <main>
+        <p>We are an independant high street agency who offer a professions service for a lower price charged by many other estate agents.</p>
+        <ul>
+            <li>Landlords are offered a low 8% rate for full management of properties</li>
+            <li>Our fees start from the low rate of 0.75%
+                <ul>
+                    <li>Professional Photographs</li>
+                    <li>Free Valuations</li>
+                    <li>Eye Catching Boards</li>
+                </ul>
+            </li>
+            <li>Open 6 days a week
+                <ul>
+                    <li>Monday - Friday 9AM - 5PM</li>
+                    <li>Saturday 9.30AM - 1PM</li>
+                </ul>
+            </li>
+            <li>Dedicated team of experienced staff</li>
+            <li>Premium Marketing</li>
+        </ul>
+    </main>
+
+    <section>
+        <form action="/submit-form" method="POST">
+            <!-- Name Field -->
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+        
+            <!-- Email Field -->
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+        
+            <!-- Dropdown for Enquiry Type -->
+            <label for="enquiry-type">Type of Enquiry:</label>
+            <select id="enquiry-type" name="enquiry-type" required>
+              <option value="selling">Selling</option>
+              <option value="renting">Renting</option>
+              <option value="landlord">Landlord</option>
+            </select><br>
+        
+            <!-- Message Field -->
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" placeholder="Write your message here..." rows="4" required></textarea><br>
+        
+            <button type="submit">Submit</button>
+          </form>
+    </section>
+</body>
+</html>
